@@ -7,6 +7,7 @@ export class BurgersController extends BaseController {
     this.router
       .get('', this.getAll)
       .post('', this.create)
+      .delete('/:id', this.delete)
   }
 
   getAll(req, res, next) {
@@ -22,6 +23,15 @@ export class BurgersController extends BaseController {
     try {
       const burgers = burgersService.create(req.body)
       res.send(burgers)
+    } catch (error) {
+      next(error)
+    }
+  }
+
+  delete(req, res, next) {
+    try {
+      burgersService.delete(req.params.id)
+      res.send('deleted')
     } catch (error) {
       next(error)
     }
