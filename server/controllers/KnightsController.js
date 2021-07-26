@@ -55,7 +55,7 @@ export class KnightsController extends BaseController {
   delete(req, res, next) {
     try {
       knightsService.delete(req.params.id)
-      res.send('delorted')
+      res.send('deleted')
     } catch (error) {
       next(error)
     }

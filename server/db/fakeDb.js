@@ -1,18 +1,7 @@
 export const fakeDb = {
-  knights: [{
+  burgers: [{
     id: 1,
-    name: 'Gallahad',
-    alignment: 'Lawful Good'
-  }, {
-    id: 2,
-    name: 'Lancelot',
-    alignment: 'Chaotic Good'
-  },
-  {
-    id: 3,
-    name: 'Morgana',
-    alignment: 'Lawful Evil'
-  }
-  ],
-  burgers: [{}]
+    name: 'Cowboy Burger',
+    price: 25
+  }]
 }
