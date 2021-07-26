@@ -13,5 +13,6 @@ export const fakeDb = {
     name: 'Morgana',
     alignment: 'Lawful Evil'
   }
-  ]
+  ],
+  burgers: [{}]
 }
