@@ -12,6 +12,13 @@ export class BurgersController extends BaseController {
       .get('/:id', this.getById)
   }
 
+  /**
+     * Sends found values to a client by request
+     * @param {import("express").Request} req
+     * @param {import("express").Response} res
+     * @param {import("express").NextFunction} next
+     */
+
   getAll(req, res, next) {
     try {
       const burgers = burgersService.getAll()
