@@ -13,7 +13,7 @@ export class BurgersController extends BaseController {
   }
 
   /**
-     * Sends found values to a client by request
+     * Function Description
      * @param {import("express").Request} req
      * @param {import("express").Response} res
      * @param {import("express").NextFunction} next
